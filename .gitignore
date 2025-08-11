@@ -1,0 +1,15 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Crash logs
+crash.log
+
+# Local .terraform directories
+.terraform/
+
+# Terraform provider binaries
+terraform-provider-*
+
+# Zip artifacts if generated
+lambda.zip
