@@ -1,15 +1,45 @@
-# Terraform state files
-*.tfstate
-*.tfstate.backup
-
-# Crash logs
-crash.log
+# ----------------------------------------
+# Terraform
+# ----------------------------------------
 
 # Local .terraform directories
 .terraform/
 
-# Terraform provider binaries
+# Terraform state files (contain sensitive data)
+*.tfstate
+*.tfstate.backup
+crash.log
+
+# Terraform variables files that may contain secrets
+*.tfvars
+*.tfvars.json
+
+# Provider binaries (large files, downloaded automatically)
 terraform-provider-*
 
-# Zip artifacts if generated
+# Plan output files
+*.plan
+
+# ----------------------------------------
+# Lambda / Build Artifacts
+# ----------------------------------------
+
+# If lambda.zip is generated during deployment, ignore it
 lambda.zip
+
+# Python cache
+__pycache__/
+*.pyc
+
+# ----------------------------------------
+# OS / Editor specific
+# ----------------------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
